@@ -173,6 +173,7 @@ img {
 #tab-2-content,
 #tab-3-content {
   display: none;
+  opacity: 0;
 }
 
 .show {
@@ -284,11 +285,15 @@ img {
 }
 
 .text-center {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin: 0 5rem;
+  display: flex;
+  /* grid-template-columns: 3fr 1.5fr; */
+  padding-right: 5rem;
+  padding-left: 10rem;
 }
 
+.text-center p {
+  padding-right: 3rem;
+}
 .text-dark {
   color: #999;
 }
@@ -305,13 +310,15 @@ img {
   cursor: pointer;
   margin-right: 0.5rem;
   outline: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 3px;
   letter-spacing: 2px;
 }
 
-btn:hover {
-  opacity: 0.9;
+.btn:hover {
+  opacity: 1;
 }
 .btn-rounded {
   border-radius: 5px;
