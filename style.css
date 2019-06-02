@@ -325,6 +325,7 @@ btn:hover {
 }
 
 .btn-lg {
+  display: inline-block;
   font-size: 1rem;
   padding: 1.5rem 2rem;
   text-transform: uppercase;
