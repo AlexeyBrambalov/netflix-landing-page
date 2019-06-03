@@ -285,10 +285,9 @@ img {
 }
 
 .text-center {
-  display: flex;
-  /* grid-template-columns: 3fr 1.5fr; */
-  padding-right: 5rem;
-  padding-left: 10rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-row-gap: 1rem;
 }
 
 .text-dark {
